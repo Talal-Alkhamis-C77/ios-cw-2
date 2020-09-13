@@ -20,8 +20,35 @@ class ViewController: UIViewController, UITextFieldDelegate {
         var animal = animalTextField.text!
         
         
+        
         // MARK: - 1️⃣ emojiArray  الي  animal قم باضافه متغير
         
+       
+        if animal == "Cats" {
+            emojiArray.append("🐱")
+        } else if animal == "Dog" {
+            emojiArray.append("🐶")
+            
+        }
+         else if animal == "Cow" {
+                  emojiArray.append("🐮")
+                  
+                } else if animal == "Lion" {
+                        emojiArray.append("🦁")
+                        
+                      } else if animal == "monkey" {
+                              emojiArray.append("🐵")
+                              
+                            } else if animal == "Owl" {
+                                    emojiArray.append("🦉")
+    
+                                    
+                                }
+        
+        else{
+            emojiArray.append("❓")
+        
+        }
         
         
         
@@ -37,7 +64,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             animalEmojiLabel.text! += label
         }
         /// **BONUS**: 🎁 قم بمسح مكونات المصفوفة بعد عرضها
-   
+        emojiArray.removeAll()
     
         
         
